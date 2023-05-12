@@ -1,41 +1,244 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Mi Curriculum Vitae</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Mi Curriculum Vitae</h1>
-  </header>
-  
-  <section>
-    <h2>Datos personales</h2>
-    <p>Nombre: Juan Pérez</p>
-    <p>Edad: 30 años</p>
-    <p>Email: juan@example.com</p>
-  </section>
-  
-  <section>
-    <h2>Educación</h2>
-    <ul>
-      <li>Grado en Ingeniería Informática - Universidad XYZ</li>
-      <li>Técnico en Desarrollo de Software - Instituto ABC</li>
-    </ul>
-  </section>
-  
-  <section>
-    <h2>Experiencia laboral</h2>
-    <ul>
-      <li>Desarrollador web - Empresa ABC (2018 - Presente)</li>
-      <li>Practicante de desarrollo de software - Empresa XYZ (2017 - 2018)</li>
-    </ul>
-  </section>
-  
-  <footer>
-    <p>&copy; 2023 Juan Pérez</p>
-  </footer>
-  
-  <script src="script.js"></script>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/styles/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Curriculum vitae</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Diego</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Sobre mi</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Proyectos</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hola,<br>soy <span class="home__title-color">Diego</span><br> Estudiante ITC</h1>
+
+                </div>
+
+                <div class="home__social">
+                    <a href="https://github.com/A01745336" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="tel:+525529641835" class="home__social-icon"><i class='bx bxs-phone'></i></a>
+                    <a href="mailto:dabalderast@hotmail.com" class="home__social-icon"><i class='bx bxs-envelope' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/inicio.jpeg"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">Sobre mi</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/Sobremi.jpeg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Soy Diego Alejandro Balderas Tlahuitzo</h2>
+                        <p class="about__text">Estudiante de la carrera de Ingenieria en Tecnologias Computacionales en el Tec de Monterrey Campus Estado de México.  En estos años, he contribuido al desarrollo de diversos proyectos escolares que me han permitido desarrollarme como ingeniero en tecnologias computacionales y como persona.  Estos proyectos han ido desde simulaciones en matlab, hasta desarrollo completo de paginas web, videojuegos 2d y aplicaciones en Andriod.  Para estos proyectos he tenido la oportunidad de trabajar con Percussion Arts Society y Municipio de Atizapán de Zaragoza.  También he contribuido a otros proyectos no tan grandes como podría ser la simulación de una ciudad inteligente haciendo uso de multiagentes en Python y graficas en unity, un resaltador de texto sintactico que revisaba la gramatica correcta de codigos, haciendo uso de expresiones regulares en Python.  </p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Habilidades</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Habilidades Personales</h2>
+                        <p class="skills__text">Introducción a las habilidades personales</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-right-arrow-alt skills__icon'></i>
+                                <span class="skills__name">Liderazgo</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-right-arrow-alt skills__icon'></i>
+                                <span class="skills__name">Trabajo en equipo</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-right-arrow-alt skills__icon'></i>
+                                <span class="skills__name">Resiliencia</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-right-arrow-alt skills__icon'></i>
+                                <span class="skills__name">Adaptabilidad</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-right-arrow-alt skills__icon'></i>
+                                <span class="skills__name">Perseverancia</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+                
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Habilidades Tecnicas</h2>
+                        <p class="skills__text">Introducción habilidades tecnicas</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAapJREFUSEvVluExBEEQhb+LgAwQASJABjIgBCJABIRABIgAESACQiAC6qva2XJ7M7N9N1t1pauu7sfOzOt+/V7PzFhTzNaEy78DPgR+Ora+gbdlmVum4mPgAtgrgDwAV9EkosBW+ATcAdvAQQH8C9gHPscYiAJfdtW6PiVROvscuJka+BnYrNAtnnSbaDWiFZ8C/oaRo7wZWDHtjiSeq0xge7zV7VUXCz3PVSyVCqmk3jEWBVYHiY2s4HLAt8DJ2OmV70Ngl1r1XKtywGa40QB8BJh8ojodNYc1BJbe1wbQd0BtfGTO0N/9hBsC1zyaRqOWyoUCUhtOsJw+ZKLfGwV+7HpUG5kmY+KlqAKXqNZWCmRVpZtMlWoXDMVl3/TrfUPvbZM27SNip5euN9K8aixMs9IAUX3JDq3A7lfpMlmt2I/SouH9V61ehbmKFUwtBMs+EqKXRLoWI1Q3XxJ/QcaAtZvVOWonBT4DrgMe9R02KXDqdWmG20crdoDsTPn0sVgFJuUePrwA9Knj0O+hF2dUXDmWZSExERHd3JoW4KXBIj5uOjSyeW0V/wKOqFUf7Z9RBQAAAABJRU5ErkJggg=="/>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAfVJREFUSEvFloExBjEQhd9fAR2gAjpAB1SAClABKkAFqIAOUIEW6IAKmM9kTS6zSTbH+Hfm5n6S27f79mU3Cy3JFkvC1VzgVUkHKeg7Se+jCcwBPpR0KQlwDNATSQQQthHgHUlnknh79iTpQhLvrkWA1xMgmUbsNgXw2trcAobK40Sj0RoBNvqvJF3X6l8D3kt1JFvPnjOHBLVd2UfWp5IeynUPmEjJ1DNqCJUljQRIKdCAZ3xzlC94wJ/Olx+SYKEnnK20Z8XxMcGKAu8GQA0L8Je/AEYgnFMzE50dK1jIRQTwvaRSH8MZb2Q1BfRREs5zA3w/1TgPslrWHtWoN28YOKVrtQw9IL5NSfnvoYxLYDKrHR0LBvWyDyXz2O9JxxvNOApMxhwt+jff3EhCoD82CsxZxUnLGBo8iIs3QaCJIaoByMXF39BnI9ECIDPqT/Mp12zPMHB5nHBEM6FmZASVeWPh/wS3VtAyDMz3S2kgAJMZ5zTSMr3mgY9uxl4NjbXzpNRySNhViHVvhKKByTxvjUWEUtbJAiBzu2cBVLuVvCXRhcZi3pNRKo83bXrdi8BhwLXo1QcHtWNSOoZW9s+++pQOoROHtZZJe2W9J8Bvv5GMywAQCTQa/QwCyoEowzYHGOcIylQK4L9c6MNZtTbOzfjX4F/eO3EfF80B4QAAAABJRU5ErkJggg=="/>
+                                <span class="skills__name">C++</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAtBJREFUSEvNljmsTVEUhr/XUaFUoVKQGKKgEFREg87QEEI0hkokElSGEEMpT2gMHRIRHaKgEEOCFqEQDRKFRsj3stbNvvudcw9Xcd9OTm7uPmuv/1//GvYZY0RrbES4TGngY8DRUOYhcBzwt1yrw8Zf10Hg/CA1uyLW0VVgMfAN2B4Or4RzfQvg/oGwnQm8jL2aYI9LF7BOBTTqXDq+DfwAZgC/gI1hlzbaayeZxtUFLGOdNDH/CfwGpjd4VgGflH6Syd8AJ3h5WPnnxsY7YEflWbKCDg2cEpdSK18ZjcQkUhZTU4r6uHVFvA04DVwK9rOB+S1pewt8ibTsBvYAd/81x0q0P4rGs6eAp8AZ4DJwonJ4ElgbrbYcOBTvLcILTTVSR2wl3gLmRVF50EcpfafEtpZLG5c5dtlCKbdVrq2/pkmbTWXll8A6fgC8ikMZlA52AgvjsDk1in1hcDHUyZ7/BIwH2fQh8UXAmgQvgZOhLMsloc8RkTIuAF5XNpJ6E+lQkWkNuc0ilETfrG4D1s6e9eA6YAnwvHK8FHgB3AckJ9l6lWnrA9b4fcxcpSyl3hVSK6e5vA5sCYMbwNaoep1/BM5WUtuCPjl6J91OvlCKr1Eod6K4dOjAWBV5EnNlAD+OXxXxkbzpysfumBV1I+mJ1dbHOfQFcx4fBp4A14AjVTT6MRp7dy+wItrte5Cw0ifyWq6uAbIZsGrvFRE3pK+39SjA1kfV32wz7gJuumXc21DMZ6MxFeVY/e+RqUPzUjo1CPetA4lblHULam+91Ps9AboibrsWs7e9Fp3f3tnlEtC8D307KWM5CnUu6DlgWSA9i6+REtyILUyLtHF1RSxzv7dy1Plf0HKs5jj0TlahHL1+m5mSoYA9pGOLSYcfQsLaoYQsqDkhu/3fGu2gPq5ZKptS1rms7SSXE3BQ203t7+qBzId92VVcw/rtPDcy4D+TYqMfSVHEMgAAAABJRU5ErkJggg=="/>
+                                <span class="skills__name">React</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAiJJREFUSEvFlo0xJGEQhp+NgAzIABEcESCCIwIugiMCRIAIEMGRgYvgiAARuHpUd1Xv1OzOT43artrampn6+n3f/v1mrMhmK8JlLPA68DNI3wLvQwWMAT4CfgObAfYCnAES6G1DgLeBC2AX+ABOA+USWAMegV/Acx/0PsCGVUCVaueAYBlev6v4JL7fBIGl4e8CToc6fwiVhrbNDL2gP4KU5CTZaouADed15PFvABrKPuZZCWwAkjyONMydbQOWqWEzjyr2eYxZA543/1elJr58tQF/RljN6eA2aTA0RfcR/jmsRcDmRrbVJGLv7sVLQ+qz1e7PsFrRqqtp0Y/tNxq4OhDoD6Cip8LOwtLMq3nWJgXOOlB9VWdlq/ofsPOdwDmxaouZEglkqiZVbKhVasWm+axaf3V8TgosmKoOYoSa68yv3wQ3DXbFpMA6M7xZQKlaMuZ/P4CNwqTAKnmLAmr2ehbeYfTwpMDpvKlaxRbXa/T25KHO/nQs1gLzvctElbkeByl2zDkEahhbHUSRqVT1zc1l0d1FAXZOrgxjhskRqFkoVm7XKs1Cqyu115LwoG0igVxtkrB3HY/O6GVWV6q5Nh1GcM662HsoJ5GKfV52EXCH59VI4vWmMgi4SVSnWzGZ6tXH7ZN3MKdW9vnCyHQprgfrbhW0Xvb8NuimMgQ4SdT8+y5vnM0ptrQQxgDrUIUS8F/AwTeVscAdhd39eWXA/wEBZ54ft6cIzgAAAABJRU5ErkJggg=="/>
+                                <span class="skills__name">Nodejs</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAThJREFUSEvtl9tNw0AQRU8qgBKgAugA0gFUkNABHQAdkApCCXQAVEBSAdABVAA60gzaWDYfdpbkwytF8cb2nLl3Zx+ZsKM22RGXvQEfAieVXFgDnxm7qfgceKoEngLPIzgdGK3eZp2NxbXh5lhcXcX1AuiO7Tu+XRLnwCr6F8ADcBD9rRRXG/gYeAeOYk12XTaRZU1wJiL0LcCqvS4sq6JYpSq2CZy1jFEVsJyrgHqt8ttGAtXAAoUtin23+hiXzlpU98Bd/OgefAb0VvwVVesJpVnV3hNmMTWnjy7c9AV/xLxVjcGdq4/AKfAKXEbfsdXeVK1onzXZ3orL4klr00ZBwn+PNvFAqrXbG+zLBs7gKlNh2VTnx0OjbpT3B4GH7M9/gjPTIYCud3Wi83hbA9gac2/+Sfyb4h86KG0fq02AugAAAABJRU5ErkJggg=="/>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAVBJREFUSEvtl+FNw0AMhb9OAEwATABMAEwATAAjwATABKzACDABsEGZANgAJgB90lk6Tml6anJqf8RSFNVJ/Pze+XzujDXZbE24bBzwHrA7khpfwGcZq4vxE3A2EmiEMeZFHrMElunHyKARbj9nXgKfAC+NgE+B14g9AU9Sj1lnU3H9U3NRcd33aG7TuQR+gEfALhV2CDykHytJ3XeYRLJHwLwjwd8hwNFx3oHrFEifQbcTWxPQ9B8D34n91RDgIPIGBEAw8Vnul/VBB/OVpF4GLDsPAe+aLO+Ko7UJsGAyvckPggR+21LqXFnX2ASi0EL6JozdSlsZupLvFMXWBNjick0tPPduvp8dexyjmgFHteeym0zVGi8bfZQw1q4E0i8777L2Ml5Y7+jjSy2GvWfgPJdiUSs00zzbjn5Q7VKFqvG2OuKQFzfun8QQMlXf/gEMOGYfzp4aoAAAAABJRU5ErkJggg=="/>
+                                <span class="skills__name">Typescript</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">C#</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Proyectos</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="https://github.com/gggandre/Taiko-SuperStar-VideogameUnity" class="work__img">
+                        <img src="assets/img/Pantalla_Inicio.PNG" alt="">
+                        <p>Videojuego 2d TaikoSuperStar</p>
+                    </a>
+                    <a href="https://github.com/A01745336/Taiko-SuperStar-" class="work__img">
+                        <img src="assets/img/Fondo con letras.png" alt="">
+                        <p>Pagina Web TaikoSuperStar</p>
+                    </a>
+                    <a href="https://github.com/A01745312/TizAlerta-android-app" class="work__img">
+                        <img src="assets/img/TizAlerta.jpeg" alt="">
+                        <p>Android App TizAlerta</p>
+                    </a>
+                    <a href="https://github.com/A01745312/TizAlerta-web" class="work__img">
+                        <img src="assets/img/TizAlertaApp.png" alt="">
+                        <p>Pagina Web TizAlerta</p>
+                    </a>
+                    <a href="https://github.com/A01745336/MultiAgentes" class="work__img">
+                        <img src="assets/img/Multiagentes.jpeg" alt="">
+                        <p>Simulación Ciudad inteligente</p>
+                    </a>
+                    <a href="https://github.com/A01745336/Evidencia-1" class="work__img">
+                        <img src="assets/img/MultiagentesBodega.jpeg" alt="">
+                        <p>Simulación Bodega Inteligente</p>
+                    </a>
+                    <a href="https://github.com/gggandre/Analysis-and-Design-of-Advanced-Algorithms/blob/master/Integrating_Project_AdversarialCaterpillars/equipo11.py" class="work__img">
+                        <img src="assets/img/tic-tac-toe.gif" alt="">
+                        <p>Algoritmo Minimax</p>
+                    </a>
+                    <a href="https://github.com/gggandre/Parser" class="work__img">
+                        <img src="assets/img/resaltadorSintactico.png" alt="">
+                        <p>Resaltador sintactico paralelo python</p>
+                    </a>
+                    <a href="https://drive.google.com/file/d/18HRGxIl2N7lpLbTUuGVCb_TctxbpDRWj/view" class="work__img">
+                        <img src="assets/img/cisco.jpg" alt="">
+                        <p>Desarrollo de red local usando equipos de Cisco y creando la red en Packet Tracer</p>
+                    </a>
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Diego Alejandro Balderas Tlahuitzo</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/diegoalejandro.balderas" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://twitter.com/Dabalderast" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/diegobt1912/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            </div>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
