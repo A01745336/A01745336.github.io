@@ -1,0 +1,51 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "skills": "Habilidades",
+        "work": "Proyectos"
+    },
+    "home": {
+        "title": "Hola,<br>soy <span class=\"home__title-color\">Diego</span><br> Estudiante ITC"
+    },
+    "about": {
+        "title": "Sobre mi",
+        "name": "Soy Diego Alejandro Balderas Tlahuitzo",
+        "description": "Estudiante de la carrera de Ingeniería en Tecnologías Computacionales en el Tec de Monterrey Campus Estado de México. En estos años, he contribuido al desarrollo de diversos proyectos escolares que han permitido desarrollarme como persona e ingeniero en tecnologías computacionales. Estos proyectos han sido desde simulaciones en Matlab hasta el desarrollo completo de páginas web, videojuegos 2D y aplicaciones en Android. Para estos proyectos he tenido la oportunidad de trabajar con Percussion Arts Society y el Municipio de Atizapán de Zaragoza. También he contribuido en otros proyectos, como la simulación de una bodega y ciudad inteligente utilizando multiagentes en Python y gráficas en Unity, y un resaltador de texto sintáctico que revisa la gramática correcta de códigos, utilizando expresiones regulares en Python."
+    },
+    "skills": {
+        "title": "Habilidades",
+        "personal_skills_title": "Habilidades Personales",
+        "leadership": "Liderazgo",
+        "teamwork": "Trabajo en equipo",
+        "resilience": "Resiliencia",
+        "adaptability": "Adaptabilidad",
+        "perseverance": "Perseverancia",
+        "technical_skills_title": "Habilidades Técnicas"
+    },
+    "work": {
+        "title": "Proyectos",
+        "arabaTitle": "Página web ArabaMarket",
+        "arabaDates": "Feb 2023 - Jun 2023",
+        "taikoVideoGameTitle": "Videojuego 2D TaikoSuperStar",
+        "taikoVideoGameDates": "Feb 2022 - May 2022",
+        "taikoWebsiteTitle": "Página Web TaikoSuperStar",
+        "taikoWebsiteDates": "Feb 2022 - May 2022",
+        "tizAlertaAppTitle": "Android App TizAlerta",
+        "tizAlertaAppDates": "Ago 2022 - Oct 2022",
+        "tizAlertaWebsiteTitle": "Página Web TizAlerta",
+        "tizAlertaWebsiteDates": "Ago 2022 - Oct 2022",
+        "multiagentsFinalTitle": "Simulación Ciudad inteligente",
+        "multiagentsFinalDates": "Oct 2022 - Dic 2022",
+        "multiagentsTitle": "Simulación Bodega Inteligente",
+        "multiagentsDates": "Oct 2022 - Dic 2022",
+        "minimaxTitle": "Algoritmo Minimax",
+        "minimaxDates": "Ago 2022 - Dic 2022",
+        "pythonTitle": "Resaltador sintáctico paralelo Python",
+        "pythonDates": "Feb 2022 - Jun 2022",
+        "netsTitle": "Desarrollo de red local usando equipos de Cisco y creando la red en Packet Tracer",
+        "netsDates": "May 2022 - Jun 2022",
+        "BulukTitle": "Buluk",
+        "BulukDates": "Agos 2017 - Jun 2020"
+    }
+}

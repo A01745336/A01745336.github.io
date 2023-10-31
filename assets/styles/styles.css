@@ -523,3 +523,19 @@ img {
     width: 450px;
   }
 }
+
+.flags{
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flags_items{
+  width: 30px;
+}
+
+.flags_img{
+  display: block;
+  cursor: pointer;
+}

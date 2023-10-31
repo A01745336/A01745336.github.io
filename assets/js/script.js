@@ -53,3 +53,24 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 200}); 
 sr.reveal('.home__social-icon',{ interval: 100}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 100}); 
+
+/*===== Translation Website =====*/
+const flagsElement = document.getElementById("flags");
+
+const textsToChance = document.querySelectorAll("[data-section]")
+
+const changeLanguage = async language=>{
+    const requestJson = await fetch(`../assets/languages/${language}.json`);
+    const texts = await requestJson.json();
+
+    for(const textToChance of textsToChance){
+        const section = textToChance.dataset.section;
+        const value = textToChance.dataset.value;
+
+        textToChance.innerHTML = texts[section][value];
+    }
+};
+
+flagsElement.addEventListener("click", (e) => {
+    changeLanguage(e.target.parentElement.dataset.language);
+});

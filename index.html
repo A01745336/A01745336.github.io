@@ -21,15 +21,24 @@
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">Sobre mi</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Proyectos</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active" data-section="nav" data-value="home">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link" data-section="nav" data-value="about">Sobre mi</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link" data-section="nav" data-value="skills">Habilidades</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link" data-section="nav" data-value="work">Proyectos</a></li>
                     </ul>
                 </div>
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
+                </div>
+
+                <div id="flags" class="flags">
+                    <div class="flags_items" data-language="es">
+                        <img class="flags_img" src="/assets/img/mx.svg" alt="">
+                    </div>
+                    <div class="flags_items" data-language="en">
+                        <img class="flags_img" src="/assets/img/us.svg" alt="">
+                    </div>
                 </div>
             </nav>
         </header>
@@ -38,7 +47,7 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hola,<br>soy <span class="home__title-color">Diego</span><br> Estudiante ITC</h1>
+                    <h1 class="home__title" data-section="home" data-value="title">Hola,<br>soy <span class="home__title-color">Diego</span><br> Estudiante ITC</h1>
 
                 </div>
 
@@ -63,7 +72,7 @@
 
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
-                <h2 class="section-title">Sobre mi</h2>
+                <h2 class="section-title" data-section="about" data-value="title">Sobre mi</h2>
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
@@ -71,48 +80,48 @@
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">Soy Diego Alejandro Balderas Tlahuitzo</h2>
-                        <p class="about__text">Estudiante de la carrera de Ingeniería en Tecnologías Computacionales en el Tec de Monterrey Campus Estado de México.  En estos años, he contribuido al desarrollo de diversos proyectos escolares que han permitido desarrollarme como persona e ingeniero en tecnologías computacionales.  Estos proyectos han sido desde simulaciones en matlab, hasta desarrollo completo de páginas web, videojuegos 2d y aplicaciones en Andriod.  Para estos proyectos he tenido la oportunidad de trabajar con Percussion Arts Society y el Municipio de Atizapán de Zaragoza.  También he contribuido en otros proyectos tales como la simulación de una bodega y ciudad inteligente haciendo uso de multiagentes en Python y gráficas en Unity; un resaltador de texto sintáctico que revisa la gramática correcta de códigos, haciendo uso de expresiones regulares en Python. </p>           
+                        <h2 class="about__subtitle" data-section="about" data-value="name">Soy Diego Alejandro Balderas Tlahuitzo</h2>
+                        <p class="about__text" data-section="about" data-value="description">Estudiante de la carrera de Ingeniería en Tecnologías Computacionales en el Tec de Monterrey Campus Estado de México.  En estos años, he contribuido al desarrollo de diversos proyectos escolares que han permitido desarrollarme como persona e ingeniero en tecnologías computacionales.  Estos proyectos han sido desde simulaciones en matlab, hasta desarrollo completo de páginas web, videojuegos 2d y aplicaciones en Andriod.  Para estos proyectos he tenido la oportunidad de trabajar con Percussion Arts Society y el Municipio de Atizapán de Zaragoza.  También he contribuido en otros proyectos tales como la simulación de una bodega y ciudad inteligente haciendo uso de multiagentes en Python y gráficas en Unity; un resaltador de texto sintáctico que revisa la gramática correcta de códigos, haciendo uso de expresiones regulares en Python. </p>           
                     </div>                                   
                 </div>
             </section>
 
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
-                <h2 class="section-title">Habilidades</h2>
+                <h2 class="section-title" data-section="skills" data-value="tittle">Habilidades</h2>
 
                 <div class="skills__container bd-grid">          
                     <div>
-                        <h2 class="skills__subtitle">Habilidades Personales</h2>
+                        <h2 class="skills__subtitle" data-section="skills" data-value="personal_skills_tittle">Habilidades Personales</h2>
                         
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bx-right-arrow-alt skills__icon'></i>
-                                <span class="skills__name">Liderazgo</span>
+                                <span class="skills__name" data-section="skills" data-value="leadership">Liderazgo</span>
                             </div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bx-right-arrow-alt skills__icon'></i>
-                                <span class="skills__name">Trabajo en equipo</span>
+                                <span class="skills__name" data-section="skills" data-value="teamwork">Trabajo en equipo</span>
                             </div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bx-right-arrow-alt skills__icon'></i>
-                                <span class="skills__name">Resiliencia</span>
+                                <span class="skills__name" data-section="skills" data-value="resilience">Resiliencia</span>
                             </div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bx-right-arrow-alt skills__icon'></i>
-                                <span class="skills__name">Adaptabilidad</span>
+                                <span class="skills__name" data-section="skills" data-value="adaptability">Adaptabilidad</span>
                             </div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bx-right-arrow-alt skills__icon'></i>
-                                <span class="skills__name">Perseverancia</span>
+                                <span class="skills__name" data-section="skills" data-value="perseverance">Perseverancia</span>
                             </div>
                         </div>
                     </div>
@@ -124,7 +133,7 @@
                 
                 <div class="skills__container bd-grid">          
                     <div>
-                        <h2 class="skills__subtitle">Habilidades Técnicas</h2>
+                        <h2 class="skills__subtitle" data-section="skills" data-value="technical_skills_tittle">Habilidades Técnicas</h2>
                         
                         <div class="skills__data">
                             <div class="skills__names">
@@ -179,52 +188,63 @@
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
-                <h2 class="section-title">Proyectos</h2>
+                <h2 class="section-title" data-section="work" data-value="tittle">Proyectos</h2>
 
                 <div class="work__container bd-grid">
                     <a href="http://arabamarket.xyz" class="work__img">
                         <img src="assets/img/arabamarket.png" alt="">
-                        <p>Página web.  ArabaMarket</p>
+                        <p data-section="work" data-value="arabaTitle">Página web.  ArabaMarket</p>
+                        <p data-section="work" data-value="arabaDates">Feb 2023 - Jun 2023</p>
                     </a>
                     <a href="https://github.com/gggandre/Taiko-SuperStar-VideogameUnity" class="work__img">
                         <img src="assets/img/Pantalla_Inicio.PNG" alt="">
-                        <p>Videojuego 2d TaikoSuperStar</p>
+                        <p data-section="work" data-value="taikoVideoGameTitle">Videojuego 2d TaikoSuperStar</p>
+                        <p data-section="work" data-value="taikoVideoGameDates">Feb 2022 - May 2022</p>
                     </a>
                     <a href="https://github.com/A01745336/Taiko-SuperStar-" class="work__img">
                         <img src="assets/img/Fondo con letras.png" alt="">
-                        <p>Página Web TaikoSuperStar</p>
+                        <p data-section="work" data-value="taikoWebsiteTitle">Página Web TaikoSuperStar</p>
+                        <p data-section="work" data-value="taikoWebsiteDates">Feb 2022 - May 2022</p>
                     </a>
                     <a href="https://github.com/A01745312/TizAlerta-android-app" class="work__img">
                         <img src="assets/img/TizAlerta.jpeg" alt="">
-                        <p>Android App TizAlerta</p>
+                        <p data-section="work" data-value="tizAlertaAppTitle">Android App TizAlerta</p>
+                        <p data-section="work" data-value="tizAlertaAppDates">Ago 2022 - Oct 2022</p>
                     </a>
                     <a href="https://github.com/A01745312/TizAlerta-web" class="work__img">
                         <img src="assets/img/TizAlertaApp.png" alt="">
-                        <p>Página Web TizAlerta</p>
+                        <p data-section="work" data-value="tizAlertaWebsiteTitle">Página Web TizAlerta</p>
+                        <p data-section="work" data-value="tizAlertaWebsiteDates">Ago 2022 - Oct 2022</p>
                     </a>
                     <a href="https://github.com/A01745336/MultiAgentes" class="work__img">
                         <img src="assets/img/Multiagentes.jpeg" alt="">
-                        <p>Simulación Ciudad inteligente</p>
+                        <p data-section="work" data-value="multiagentsFinalTitle">Simulación Ciudad inteligente</p>
+                        <p data-section="work" data-value="multiagentsFinalDates">Oct 2022 - Dic 2022</p>
                     </a>
                     <a href="https://github.com/A01745336/Evidencia-1" class="work__img">
                         <img src="assets/img/MultiagentesBodega.jpeg" alt="">
-                        <p>Simulación Bodega Inteligente</p>
+                        <p data-section="work" data-value="multiagentsTitle">Simulación Bodega Inteligente</p>
+                        <p data-section="work" data-value="multiagentsDates">Oct 2022 - Dic 2022</p>
                     </a>
                     <a href="https://github.com/gggandre/Analysis-and-Design-of-Advanced-Algorithms/blob/master/Integrating_Project_AdversarialCaterpillars/equipo11.py" class="work__img">
                         <img src="assets/img/tic-tac-toe.gif" alt="">
-                        <p>Algoritmo Minimax</p>
+                        <p data-section="work" data-value="minimaxTitle">Algoritmo Minimax</p>
+                        <p data-section="work" data-value="minimaxDates">Ago 2022 - Dic 2022</p>
                     </a>
                     <a href="https://github.com/gggandre/Parser" class="work__img">
                         <img src="assets/img/resaltadorSintactico.png" alt="">
-                        <p>Resaltador sintáctico paralelo python</p>
+                        <p data-section="work" data-value="pythonTitle">Resaltador sintáctico paralelo python</p>
+                        <p data-section="work" data-value="pythonDates">Feb 2022 - Jun 2022</p>
                     </a>
                     <a href="https://drive.google.com/file/d/18HRGxIl2N7lpLbTUuGVCb_TctxbpDRWj/view" class="work__img">
                         <img src="assets/img/cisco.jpg" alt="">
-                        <p>Desarrollo de red local usando equipos de Cisco y creando la red en Packet Tracer</p>
+                        <p data-section="work" data-value="netsTitle">Desarrollo de red local usando equipos de Cisco y creando la red en Packet Tracer</p>
+                        <p data-section="work" data-value="netsDates">May 2022 - Jun 2022</p>
                     </a>
                     <a href="" class="work__img">
                         <img src="assets/img/buluk.jpg" alt="">
-                        <p>Buluk</p>
+                        <p data-section="work" data-value="BulukTitle">Buluk</p>
+                        <p data-section="work" data-value="BulukDates">Agos 2017 - Jun 2020</p>
                     </a>
                 </div>
             </section>
